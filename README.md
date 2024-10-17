@@ -16,7 +16,7 @@ The project leverages a range of modern technologies to provide an engaging and 
 - **FastAPI**: API framework for backend services.
 - **Firebase (Firestore & Firebase Authentication)**: User authentication and game state management.
 - **Google Vertex AI**: AI-powered chess move suggestions.
-- **Telethon**: Integration with Telegram to manage bot interactions.
+- **Telethon**: Integration with Telegram API Gaming Platform uses HTML5 to manage a game.
 - **Redis**: Session management and caching.
 - **Docker & Kubernetes**: Containerization and deployment on Google Kubernetes Engine (GKE).
 - **Cloudflare**: DNS and SSL for secure connections.
