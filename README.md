@@ -112,19 +112,9 @@ CoexistenceBoardChain/
 
 ## Deployment
 
-To deploy the application, you need to set up Google Kubernetes Engine (GKE) and use Docker images for containerization.
-
 ### 1. Build Docker Image
-```bash
-docker build -t coexistenceboardchain .
-```
 
 ### 2. Push Image to Google Container Registry
-```bash
-gcloud auth configure-docker
-docker tag coexistenceboardchain gcr.io/c-b-chain/coexistenceboardchain:latest
-docker push gcr.io/c-b-chain/coexistenceboardchain:latest
-```
 
 ### 3. Deploy on GKE
 Use Kubernetes manifests to deploy the services, or use Helm charts for more flexibility and easier upgrades.
@@ -134,8 +124,8 @@ Use Kubernetes manifests to deploy the services, or use Helm charts for more fle
 ## Testing
 
 ### **1. Unit and Integration Tests**
-- **Unit tests** were implemented to verify individual functionalities, such as Firebase authentication and move validation in chess logic.
-- **Integration tests** included checking the full cycle of game state persistence in Firebase Firestore.
+- **Unit tests**  Firebase authentication and move validation in chess logic.
+- **Integration tests**  checking the full cycle of game state persistence in Firebase Firestore.
 
 ### **2. WebSocket Tests**
 - Verified the WebSocket communication flow between the client and the server.
@@ -150,7 +140,8 @@ Use Kubernetes manifests to deploy the services, or use Helm charts for more fle
 
 - **Enhanced AI Collaboration**: Improve the AI-human interaction to better support users during the game, offering suggestions and insights into moves.
 - **Extend to Multiplayer**: Add features to support full multiplayer modes, integrating more complex AI behavior for simultaneous player management.
-- **Deploy Monitoring Tools**: Set up **Prometheus** and **Sentry** to monitor API performance and errors in real time.
+- **Deploy Monitoring Tools**:
+            **Prometheus** and **Sentry** to monitor API performance and errors in real time.
 - **Game Secrets**: After achieving stable API and communication functionality, add "secrets" to the game such as quizzes, non-standard super moves, traps, and other surprises to make the game more engaging and unpredictable.
 
 ---
